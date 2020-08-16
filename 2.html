@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="2.js"></script>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .mainbox {
+            background: url("https://picsum.photos/id/120/1200/1300");
+            height: 100vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .mainform {
+            border: 3px solid white;
+            width: 70vh;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <div class="mainbox">
+        <form class="mainform"
+            style="display: flex;justify-content: center;align-items: center; flex-direction: column;">
+            <h1 style="color: white;">Login Form</h1>
+
+
+            <div style="height: 30vh; width: 30vh; color: white; display: flex; flex-direction: column;">
+                <label for="username" style="font-size: 20px;">Username</label>
+                <input type="text" name="username" id="inputbox1" placeholder="Enter name" size="30" required><br>
+
+                <label for="password" style="font-size: 20px;">Password</label>
+                <input id=" inputbox12" type="text" name="Password" placeholder="Enter name" size="30" required><br>
+                <label>
+                    <input type="checkbox" checked="checked" name=" Remember">Remember me
+                </label>
+                <label>
+                    <input type="checkbox" checked="checked" name=" Remember">Keep me Login
+                </label>
+
+                <button onclick="submit1() " type="submit" style="background:red; font-size: 15px; color: white;">
+                    Login</button>
+                <br>
+
+                <div id="dropbax">
+                    <div id="sample"> </div>
+
+                </div>
+
+
+            </div>
+
+        </form>
+
+
+    </div>
+
+</body>
+
+</html>
